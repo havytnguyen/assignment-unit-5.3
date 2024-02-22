@@ -16,11 +16,22 @@ let album = {
 }
 
 console.log("adding albums into collection.");
+console.log(addToCollection(myCollection,'Chilombo', 'Jhene Aiko', 2020));
+console.log(addToCollection(myCollection,'I Used to Know Her', 'H.E.R', 2019));
+console.log(addToCollection(myCollection,'SOS', 'SZA', 2022));
+console.log(addToCollection(myCollection,'Channel ORANGE', 'Frank Ocean', 2012));
+console.log(addToCollection(myCollection,'Freudian', 'Daniel Caesar', 2017));
+console.log(addToCollection(myCollection,'Over it', 'Summer Walker', 2020));
+console.log("myCollection:,added new albums into the collection");
 
-
-
-
-
+function showCollection(collection) {
+  for(let i = 0; i < collection.length; i++) {
+    let album = collection[i];
+  console.log('${collection[i].title}by ${collection[i].artist}, published ${collection[i].yearPublished}');
+  }
+}
+console.log("show collection");
+showCollection(myCollection);
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
