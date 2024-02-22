@@ -27,7 +27,7 @@ console.log("myCollection:,added new albums into the collection");
 function showCollection(collection) {
   for(let i = 0; i < collection.length; i++) {
     let album = collection[i];
-  console.log('${collection[i].title}by ${collection[i].artist}, published ${collection[i].yearPublished}');
+  console.log("${collection[i].title}by ${collection[i].artist}, published ${collection[i].yearPublished}");
   }
 }
 console.log("show collection");
@@ -35,7 +35,19 @@ showCollection(myCollection);
 
 function findByArtist(collection, artist) {
   let results = [];
+for(let i = 0; i < collection.length; i++) {
+  if  (collection.artist == findByArtist) {
+    results.push(collection);
+  }
+  }
+  return results;
 }
+
+console.log(findByArtist(myCollection,'Sza'),"expect 1 result from search:", findByArtist);
+console.log(findByArtist(myCollection,'Jhene Aiko' ),"expect 1 result from search:", findByArtist);
+console.log(findByArtist(myCollection,'Frank Ocean'),"expect 1 result from search:", findByArtist);
+console.log(findByArtist(myCollection,'Daniel Caesar'),"expect 1 result from search:", findByArtist);
+console.log(findByArtist(myCollection,'H.E.R'),"expect 1 result from search:", findByArtist);
 
 // PLEASE DO NOT MODIFY THIS. Just leave it down here at the bottom. Think of it
 // as a lil' chunk of friendly code that you don't need to understand right now.
